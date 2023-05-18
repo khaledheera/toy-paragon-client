@@ -15,8 +15,8 @@ const Gallery = () => {
       <div className="flex flex-col w-full mb-6 lg:justify-between lg:flex-row md:mb-8">
         <div className="flex items-center mb-5 md:mb-6 group lg:max-w-xl">
           
-          <h2 className="font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl">
-            <span className="inline-block mb-2">Trending Toys</span>
+          <h2 className="font-sans text-3xl font-bold text-gray-900 sm:text-4xl ">
+            <span className="inline-block mb-2 text-center">Trending Toys</span>
             <div className="h-1 ml-auto duration-300 origin-left transform bg-deep-purple-accent-400 scale-x-30 group-hover:scale-x-100" />
           </h2>
         </div>
