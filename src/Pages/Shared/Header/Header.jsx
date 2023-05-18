@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import { FaBars, FaTimes, FaUserAlt } from "react-icons/fa";
 import { Link, NavLink } from "react-router-dom";
-import logo from "../../../assets/images/toy-paragon-logo.png";
+import logo from "../../../assets/images/logo.png";
 import "./header.css";
 import { AuthContext } from "../../../Providers/AuthProvider";
 
@@ -12,7 +12,7 @@ const Header = () => {
   
 
   return (
-    <nav className="bg-gradient-to-r from-teal-900 via-teal-950 to-teal-900">
+    <nav className="bg-gradient-to-r from-teal-900 via-teal-700 to-teal-900">
       <div className="mb-[210px] lg:mb-0 ">
         <div className="px-4 py-5 mx-auto  md:px-24 lg:px-10">
           <div className="relative flex items-center justify-between">
@@ -42,7 +42,9 @@ const Header = () => {
                  All Toys
                 </NavLink>
               </li>
-              <li>
+
+              {user?. uid && <>
+                <li>
                 <NavLink
                   to="/blogs"
                   title="Blog"
@@ -60,6 +62,10 @@ const Header = () => {
                  Add A Toy
                 </NavLink>
               </li>
+
+              </> }
+             
+              
               <li>
                 <NavLink
                   to="/blogs"
@@ -71,7 +77,9 @@ const Header = () => {
               </li>
 
               <li>
-                {user?.uid ? (
+                {user?.uid ? 
+                
+                (
                   <Link>
                     <button
                       onClick={logOut}
