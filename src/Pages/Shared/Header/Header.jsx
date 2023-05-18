@@ -12,7 +12,7 @@ const Header = () => {
   
 
   return (
-    <nav className="bg-gradient-to-r from-teal-900 via-teal-700 to-teal-900">
+    <nav className="bg-gradient-to-r from-black via-white to-black">
       <div className="mb-[210px] lg:mb-0 ">
         <div className="px-4 py-5 mx-auto  md:px-24 lg:px-10">
           <div className="relative flex items-center justify-between">
