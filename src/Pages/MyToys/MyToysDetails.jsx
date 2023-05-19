@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const MyToysDetails = ({myToy,deleteToy}) => {
+const MyToysDetails = ({myToy,deleteToy,updateToys}) => {
     const {_id,sellerName,name,subCategory,price,quantity}=myToy;
     
 
@@ -15,7 +15,7 @@ const MyToysDetails = ({myToy,deleteToy}) => {
              <td>${price}</td>
              <td>{quantity}</td>
             
-            <td><Link  className="btn btn-info">Update  </Link></td>
+            <td><Link onClick={()=>updateToys(_id)} className="btn btn-info">Update  </Link></td>
             
             
            <td> <Link onClick={() => deleteToy(_id)}  className="btn btn-info">Delete </Link></td>

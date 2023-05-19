@@ -37,10 +37,15 @@ const MyToys = () => {
                 })
         }
     }
+
+ 
+
+      
     
 
     return (
         <div className='px-4  mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 '>
+           
              <table className="table w-full">
                    
                     <tbody>
@@ -61,6 +66,7 @@ const MyToys = () => {
                          key={myToy._id}
                          myToy={myToy}
                          deleteToy={deleteToy}
+                         
                          ></MyToysDetails>)
                         }
                     </tbody>

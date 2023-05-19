@@ -3,6 +3,7 @@ import AllToysDetails from './AllToysDetails';
 
 const AllToys = () => {
     const [toys, setToys] = useState([]);
+    const [searchToys, setSearchToys] = useState("");
     useEffect(()=>{
         fetch('http://localhost:5000/allToys')
         .then((res) => res.json())
@@ -10,8 +11,26 @@ const AllToys = () => {
         setToys(data);
       })
     }, []);
+
+
+    const searchToy = () => {
+        fetch(`http://localhost:5000/getToysByText/${searchToys}`)
+          .then((res) => res.json())
+          .then((data) => {
+            setToys(data);
+          });
+      };
+
     return (
         <div className='px-4  mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 '>
+             <div className="search-box p-2 text-center ">
+          <input
+            onChange={(e) => setSearchToys(e.target.value)}
+            type="text"
+            className="p-1 border"
+          />{" "}
+          <button onClick={searchToy }>Search</button>
+        </div>
              <table className="table w-full">
                    
                     <tbody>
