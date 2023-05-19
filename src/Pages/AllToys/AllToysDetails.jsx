@@ -4,7 +4,7 @@ import { Link, } from 'react-router-dom';
 const AllToysDetails = ({toy}) => {
     const {_id,sellerName,name,subCategory,price,quantity}=toy;
     return (
-        <div>
+        
              
            
            <tr>
@@ -24,7 +24,7 @@ const AllToysDetails = ({toy}) => {
        </tr>
           
              
-        </div>
+       
     );
 };
 

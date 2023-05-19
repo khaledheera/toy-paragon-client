@@ -10,7 +10,7 @@ const MyToys = () => {
 
     
     useEffect(() => {
-        fetch(`http://localhost:5000/myToys?email=${user?.email}`)
+        fetch(`http://localhost:5000/myToys/${user?.email}`)
             .then(res => res.json())
             .then(data => {
                 console.log(data);
@@ -18,7 +18,7 @@ const MyToys = () => {
             }
                 
                 )
-    }, [user]);
+    }, [user.email]);
 
     return (
         <div className='px-4  mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 '>

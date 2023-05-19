@@ -197,7 +197,7 @@ const Header = () => {
               <li>
                 <NavLink
                   to="/addToys"
-                  title="Blog"
+                  title="Add Toys"
                   className="font-medium text-white"
                 >
                  Add A Toy
