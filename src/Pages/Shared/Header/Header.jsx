@@ -12,13 +12,13 @@ const Header = () => {
   
 
   return (
-    <nav className="bg-gradient-to-r from-black via-white to-black">
+    <nav className="bg-gradient-to-r from-black via-yellow-200 to-black  mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl ">
       <div className="mb-[210px] lg:mb-0 ">
         <div className="px-4 py-5 mx-auto  md:px-24 lg:px-10">
           <div className="relative flex items-center justify-between">
             <Link to="/" className="inline-flex items-center">
               <img src={logo} alt="" className="w-10 h-10 rounded-full" />
-              <span className="text-2xl font-extrabold ml-5 text-rose-600 uppercase italic">
+              <span className="text-2xl font-extrabold ml-5 text-sky-200 uppercase italic">
                TOY PARAGON
               </span>
             </Link>
@@ -55,7 +55,7 @@ const Header = () => {
               </li>
               <li>
                 <NavLink
-                  to="/blogs"
+                  to="/addToys"
                   title="Blog"
                   className="font-medium text-white"
                 >
@@ -184,24 +184,27 @@ const Header = () => {
                             All Toys
                           </NavLink>
                         </li>
-                        <li>
-                          <NavLink
-                            to="/blogs"
-                            title="Blog"
-                            className="font-medium "
-                          >
-                           My Toys
-                          </NavLink>
-                        </li>
-                        <li>
-                          <NavLink
-                            to="/blogs"
-                            title="Blog"
-                            className="font-medium "
-                          >
-                           Add A Toy
-                          </NavLink>
-                        </li>
+                        {user?. uid && <>
+                <li>
+                <NavLink
+                  to="/blogs"
+                  title="Blog"
+                  className="font-medium text-white"
+                >
+                My Toys
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/addToys"
+                  title="Blog"
+                  className="font-medium text-white"
+                >
+                 Add A Toy
+                </NavLink>
+              </li>
+
+              </> }
                         <li>
                           <NavLink
                             to="/blogs"

@@ -20,6 +20,7 @@ const SatisfiedPeople = () => {
             <div className='grid gap-8 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full'>
                 {
 satisfy.map(satisfied=><SatisfiedPeopleCard
+key={satisfied.id}
 satisfied={satisfied}
 ></SatisfiedPeopleCard>)
                 }

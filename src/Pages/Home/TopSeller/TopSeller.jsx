@@ -26,6 +26,7 @@ const TopSeller = () => {
        
         {
             seller.map(sell=><TopSellerCard
+            key={sell.id}
             sell={sell}
             ></TopSellerCard>)
         }

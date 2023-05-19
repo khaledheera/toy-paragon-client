@@ -1,50 +1,74 @@
 [
-    {   "doll_id":"01",
-        "picture":"https://cdn-ssl.s7.disneystore.com/is/image/DisneyShopping/6002040580654?fmt=webp&qlt=70&wid=2000&hei=2000",
-        "name":"Belle Doll ",
-        "price":"33", 
-        "Rating":"5",
-        "subCategory":"animationCharacters"
-    
+    {
+        "doll_id": "01",
+        "picture": "https://cdn-ssl.s7.disneystore.com/is/image/DisneyShopping/6002040580654?fmt=webp&qlt=70&wid=2000&hei=2000",
+        "name": "Belle Doll ",
+        "price": "33",
+        "Rating": "5",
+        "subCategory": "animationCharacters",
+        "sellerName": "Cesar Morales",
+        "sellerEmail": "info@gmail.com",
+        "quantity": "20",
+        "description": "Inspired by the confidence and style of today's young dreamers, Disney ily 4EVER takes its cue from the Disney Princesses. Each Disney ily 4EVER doll comes with a surprise and the fashion-forward outfits and accessories can be mixed and matched so your child can create magic all their own."
     },
-    {"doll_id":"02",
-        "picture":"https://cdn-ssl.s7.disneystore.com/is/image/DisneyShopping/6002040580664?fmt=webp&qlt=70&wid=1216&hei=1216",
-        "name":"Tiana Doll",
-        "price":"29.95", 
-        "Rating":"4",
-        "subCategory":"animationCharacters"
-    
+    {
+        "doll_id": "02",
+        "picture": "https://cdn-ssl.s7.disneystore.com/is/image/DisneyShopping/6002040580664?fmt=webp&qlt=70&wid=1216&hei=1216",
+        "name": "Tiana Doll",
+        "price": "29.95",
+        "Rating": "4",
+        "subCategory": "animationCharacters",
+        "sellerName": "Affi Kj",
+        "sellerEmail": "info@gmail.com",
+        "quantity": "20",
+        "description": "Inspired by the confidence and style of today's young dreamers, Disney ily 4EVER takes its cue from the Disney Princesses. Each Disney ily 4EVER doll comes with a surprise and the fashion-forward outfits and accessories can be mixed and matched so your child can create magic all their own."
     },
-    {"doll_id":"03",
-        "picture":"https://cdn-ssl.s7.disneystore.com/is/image/DisneyShopping/7409055365153?fmt=webp&qlt=70&wid=1216&hei=1216",
-        "name":"Donald Duck",
-        "price":"195", 
-        "Rating":"5",
-        "subCategory":"donaldDuck"
-    
+    {
+        "doll_id": "03",
+        "picture": "https://cdn-ssl.s7.disneystore.com/is/image/DisneyShopping/7409055365153?fmt=webp&qlt=70&wid=1216&hei=1216",
+        "name": "Donald Duck",
+        "price": "195",
+        "Rating": "5",
+        "subCategory": "donaldDuck",
+        "sellerName": "Mimiku Hara",
+        "sellerEmail": "info@gmail.com",
+        "quantity": "20",
+        "description": "Inspired by the confidence and style of today's young dreamers, Disney ily 4EVER takes its cue from the Disney Princesses. Each Disney ily 4EVER doll comes with a surprise and the fashion-forward outfits and accessories can be mixed and matched so your child can create magic all their own."
     },
-    {"doll_id":"04",
-        "picture":"https://cdn-ssl.s7.disneystore.com/is/image/DisneyShopping/6811101044183-1?fmt=webp&qlt=70&wid=1216&hei=1216",
-        "name":"Donald Duck with Chip",
-        "price":"64", 
-        "Rating":"4.5",
-        "subCategory":"donaldDuck, "
-    
+    {
+        "doll_id": "04",
+        "picture": "https://cdn-ssl.s7.disneystore.com/is/image/DisneyShopping/6811101044183-1?fmt=webp&qlt=70&wid=1216&hei=1216",
+        "name": "Donald Duck with Chip",
+        "price": "64",
+        "Rating": "4.5",
+        "subCategory": "donaldDuck, ",
+        "sellerName": "Hela Ann",
+        "sellerEmail": "info@gmail.com",
+        "quantity": "20",
+        "description": "Inspired by the confidence and style of today's young dreamers, Disney ily 4EVER takes its cue from the Disney Princesses. Each Disney ily 4EVER doll comes with a surprise and the fashion-forward outfits and accessories can be mixed and matched so your child can create magic all their own."
     },
-    {"doll_id":"05",
+    {
+        "doll_id":"05",
         "picture":"https://cdn-ssl.s7.disneystore.com/is/image/DisneyShopping/6002040901998-2?fmt=webp&qlt=70&wid=2000&hei=2000",
         "name":"Rapunzel ",
-        "price":"59", 
+        "price":"59",
         "Rating":"4",
-        "subCategory":"DisneyPrinces"
-    
+        "subCategory":"DisneyPrinces",
+        "sellerName":"Jin Chatri",
+        "sellerEmail":"info@gmail.com",
+        "quantity": "20",
+        "description":"Inspired by the confidence and style of today's young dreamers, Disney ily 4EVER takes its cue from the Disney Princesses. Each Disney ily 4EVER doll comes with a surprise and the fashion-forward outfits and accessories can be mixed and matched so your child can create magic all their own."
     },
-    {"doll_id":"06",
+    {
+        "doll_id":"06",
         "picture":"https://cdn-ssl.s7.disneystore.com/is/image/DisneyShopping/6002040901997-2?fmt=webp&qlt=70&wid=2000&hei=2000",
         "name":"Snow White",
-        "price":"59.99", 
+        "price":"59.99",
         "Rating":"5",
-        "subCategory":"DisneyPrinces"
-    
+        "subCategory":"DisneyPrinces",
+        "sellerName":"Cheeku",
+        "sellerEmail":"info@gmail.com",
+        "quantity":"20",
+        "description":"Inspired by the confidence and style of today's young dreamers, Disney ily 4EVER takes its cue from the Disney Princesses. Each Disney ily 4EVER doll comes with a surprise and the fashion-forward outfits and accessories can be mixed and matched so your child can create magic all their own."
     }
 ]

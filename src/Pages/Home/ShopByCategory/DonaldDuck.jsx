@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 
 const DonaldDuck = ({duck}) => {
-    const { picture,name,price,Rating} = duck;
+    const {_id, picture,name,price,Rating} = duck;
     return (
       <div className="card lg:w-96 glass py-5 mx-auto  md:px-24 lg:px-10">
       <figure><img src={picture} alt="car!"/></figure>
@@ -15,7 +15,7 @@ const DonaldDuck = ({duck}) => {
           
         </div>
         <NavLink className="card-actions justify-center mt-6">
-          <Link className="btn btn-info">View Details  </Link>
+          <Link to={`/dollDetails/${_id}`} className="btn btn-info">View Details  </Link>
         </NavLink>
       </div>
     </div>
