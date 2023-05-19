@@ -50,7 +50,7 @@ const AddToys = () => {
             />
             <input
               className="p-4 m-5 border rounded"
-              {...register("name")}
+              {...register("sellerName")}
               placeholder="Seller Name"
              
             />
@@ -76,7 +76,7 @@ const AddToys = () => {
             <div >
             <input
               className="p-4 m-5 border rounded"
-              {...register("image")}
+              {...register("picture")}
               placeholder="image link"
               type="url"
              
@@ -91,7 +91,7 @@ const AddToys = () => {
             </div>
             <input
               className="p-4 m-5 border rounded"
-              {...register("rating")}
+              {...register("Rating")}
               placeholder="Rating"
               type='number'
             /> 

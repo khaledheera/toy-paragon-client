@@ -35,7 +35,7 @@ const Header = () => {
 
               <li>
                 <NavLink
-                  to="/blogs"
+                  to="/allToys"
                   title="Blog"
                   className="font-medium text-white"
                 >
@@ -177,7 +177,7 @@ const Header = () => {
 
                         <li>
                           <NavLink
-                            to="/blogs"
+                            to="/allToys"
                             title="Blog"
                             className="font-medium "
                           >

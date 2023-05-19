@@ -5,6 +5,7 @@ import LogIn from "../Pages/Login/logIn";
 import Register from "../Pages/Register/Register";
 import DollDetails from "../Pages/DollDetails/DollDetails";
 import AddToys from "../Pages/AddToys/AddToys";
+import AllToys from "../Pages/AllToys/AllToys";
 
 
 
@@ -34,6 +35,11 @@ export const router = createBrowserRouter([
             {
                 path:"/addToys",
                 element:<AddToys/>
+            },
+            {
+                path:'/allToys',
+                element:<AllToys/>,
+                
             }
         ]
         
