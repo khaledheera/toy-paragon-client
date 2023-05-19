@@ -6,7 +6,8 @@ const AllToysDetails = ({toy}) => {
     return (
         <div>
              
-             <tr>
+           
+           <tr>
            
           
               
@@ -21,6 +22,7 @@ const AllToysDetails = ({toy}) => {
           
            
        </tr>
+          
              
         </div>
     );

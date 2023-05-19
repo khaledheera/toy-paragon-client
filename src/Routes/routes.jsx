@@ -6,6 +6,8 @@ import Register from "../Pages/Register/Register";
 import DollDetails from "../Pages/DollDetails/DollDetails";
 import AddToys from "../Pages/AddToys/AddToys";
 import AllToys from "../Pages/AllToys/AllToys";
+import MyToys from "../Pages/MyToys/MyToys";
+import PrivateRoutes from "./PrivateRoutes";
 
 
 
@@ -29,7 +31,7 @@ export const router = createBrowserRouter([
             },
             {
                 path:"/dollDetails/:id",
-                element:<DollDetails/>,
+                element:<PrivateRoutes><DollDetails/></PrivateRoutes>,
                 loader:({params})=>fetch(`http://localhost:5000/category/${params.id}`)
             },
             {
@@ -40,6 +42,10 @@ export const router = createBrowserRouter([
                 path:'/allToys',
                 element:<AllToys/>,
                 
+            },
+            {
+                path:"/myToys",
+                element:<PrivateRoutes><MyToys/></PrivateRoutes>
             }
         ]
         

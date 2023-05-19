@@ -46,7 +46,7 @@ const Header = () => {
               {user?. uid && <>
                 <li>
                 <NavLink
-                  to="/blogs"
+                  to="/myToys"
                   title="Blog"
                   className="font-medium text-white"
                 >
@@ -178,7 +178,7 @@ const Header = () => {
                         <li>
                           <NavLink
                             to="/allToys"
-                            title="Blog"
+                            title="All Toys"
                             className="font-medium "
                           >
                             All Toys
@@ -187,8 +187,8 @@ const Header = () => {
                         {user?. uid && <>
                 <li>
                 <NavLink
-                  to="/blogs"
-                  title="Blog"
+                  to="/myToys"
+                  title="My toys"
                   className="font-medium text-white"
                 >
                 My Toys
