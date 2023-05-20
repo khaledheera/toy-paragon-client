@@ -15,8 +15,8 @@ const TopSeller = () => {
 
 
     return (
-        <div>
-            <div className='font-sans text-3xl font-bold text-center'>
+        <div className='bg-[#00685E]'>
+            <div className='font-sans text-3xl font-bold text-center text-black'>
                 <h2>Top Rated Sellers
                    of the Month</h2>
             </div>

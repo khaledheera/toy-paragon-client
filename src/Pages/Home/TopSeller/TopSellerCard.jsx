@@ -4,9 +4,9 @@ const TopSellerCard = ({sell}) => {
     const { photo,name,rating,sales} = sell;
     return (
         <div>
-             <div className="p-8 bg-white border rounded shadow-sm">
+             <div className="p-8 text-black border rounded shadow-sm card  glass px-4 py-5 mx-auto  md:px-24 lg:px-10">
           
-          <div className="flex items-center">
+          <div className="flex items-center ">
             <a href="/" aria-label="Author" title="Author" className="mr-3">
               <img
                 src={photo}
@@ -15,13 +15,13 @@ const TopSellerCard = ({sell}) => {
             </a>
             <div>
              
-              <p className="text-sm font-medium leading-4 text-gray-600">
+              <p className="text-sm font-medium leading-4 ">
                 {name}
               </p>
-              <p className="text-sm font-medium leading-4 text-gray-600">
+              <p className="text-sm font-medium leading-4 ">
                 Rating: {rating}
               </p>
-              <p className="text-sm font-medium leading-4 text-gray-600">
+              <p className="text-sm font-medium leading-4 ">
                 {sales} sales
               </p>
             </div>

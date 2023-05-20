@@ -11,7 +11,7 @@ const Gallery = () => {
         <div>
             <h2></h2>
 
-            <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+            <div className="bg-[#00685E]   mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl text-black">
       <div className="flex flex-col w-full mb-6 lg:justify-center lg:flex-row md:mb-8">
         
           <h2 className="font-sans text-3xl font-bold text-gray-900 sm:text-4xl text-center flex justify-center">
@@ -20,7 +20,9 @@ const Gallery = () => {
           </h2>
         
       </div>
-      <div className="grid gap-8 row-gap-5 mb-8 lg:grid-cols-3 lg:row-gap-8">
+      <div data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500" className="grid gap-8 row-gap-5 mb-8 lg:grid-cols-3 lg:row-gap-8">
         <div className='card lg:w-96 glass px-4 py-5 mx-auto  md:px-24 lg:px-10'>
           <img
             className="object-cover w-full h-56 mb-6 rounded shadow-lg md:h-64 xl:h-80"

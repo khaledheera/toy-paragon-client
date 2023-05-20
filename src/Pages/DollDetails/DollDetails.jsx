@@ -1,5 +1,5 @@
 import React from 'react';
-import { useLoaderData } from 'react-router-dom';
+import { Link, useLoaderData } from 'react-router-dom';
 
 const DollDetails = () => {
     const details=useLoaderData()
@@ -16,7 +16,7 @@ const DollDetails = () => {
         <p><span className='font-bold'>Quantity: </span>{quantity} </p>
         <p><span className='font-bold'>Seller Name: </span>{sellerName} </p>
         <p><span className='font-bold'>Seller Email: </span>{sellerEmail} </p>
-        <button className="btn btn-primary">Buy Now</button>
+        <Link to="/gdhg" className="btn btn-primary">Buy Now</Link>
       </div>
     </div>
   </div>

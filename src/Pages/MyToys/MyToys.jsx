@@ -38,6 +38,22 @@ const MyToys = () => {
         }
     }
 
+    const updateMyToys = (data) => {
+        console.log(data);
+        fetch(`http://localhost:5000/updateMyToys/${data._id}`, {
+          method: "PUT",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(data),
+        })
+          .then((res) => res.json())
+          .then((result) => {
+            if (result.modifiedCount > 0) {
+              setControl(!control);
+            }
+            console.log(result);
+          });
+      };
+
  
 
       
@@ -50,7 +66,7 @@ const MyToys = () => {
                    
                     <tbody>
                         <tr>
-                            
+                            <th>No.</th>
                             <th>Seller</th>
                             <th>Toy Name</th>
                             <th>Sub-category</th>
@@ -62,11 +78,12 @@ const MyToys = () => {
                     </tbody>
                     <tbody>
                         {
-                        myToys.map(myToy=><MyToysDetails
+                        myToys.map((myToy,index)=><MyToysDetails
+                        index={index}
                          key={myToy._id}
                          myToy={myToy}
                          deleteToy={deleteToy}
-                         
+                         updateMyToys={updateMyToys}
                          ></MyToysDetails>)
                         }
                     </tbody>

@@ -12,13 +12,13 @@ const Header = () => {
   
 
   return (
-    <nav className="bg-gradient-to-r from-black via-yellow-200 to-black  mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl ">
+    <nav className="bg-[#059473]  mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl text-black">
       <div className="mb-[210px] lg:mb-0 ">
         <div className="px-4 py-5 mx-auto  md:px-24 lg:px-10">
           <div className="relative flex items-center justify-between">
             <Link to="/" className="inline-flex items-center">
               <img src={logo} alt="" className="w-10 h-10 rounded-full" />
-              <span className="text-2xl font-extrabold ml-5 text-sky-200 uppercase italic">
+              <span className="text-2xl font-extrabold ml-5  uppercase italic">
                TOY PARAGON
               </span>
             </Link>
@@ -83,7 +83,7 @@ const Header = () => {
                   <Link>
                     <button
                       onClick={logOut}
-                      className="inline-flex items-center justify-center h-12 px-6 font-medium   transition duration-200 rounded shadow-md bg-gradient-to-trfrom-slate-900 via-rose-900 to-slate-900  focus:shadow-outline focus:outline-none text-white"
+                      className="inline-flex items-center justify-center h-12 px-6 font-medium   transition duration-200 rounded shadow-md bg-success focus:shadow-outline focus:outline-none text-white"
                       title="Log Out"
                     >
                       Log Out
@@ -92,7 +92,7 @@ const Header = () => {
                 ) : (
                   <Link to={"/login"}>
                     <button
-                      className="inline-flex items-center justify-center h-12 px-6 font-medium  transition duration-200 rounded shadow-md bg-gradient-to-tr from-slate-900 via-rose-900 to-slate-900 focus:shadow-outline focus:outline-none text-white"
+                      className="inline-flex items-center justify-center h-12 px-6 font-medium  transition duration-200 rounded shadow-md bg-success focus:shadow-outline focus:outline-none text-white"
                       title="Login"
                     >
                       Login
@@ -240,7 +240,7 @@ const Header = () => {
                             <Link>
                               <button
                                 onClick={logOut}
-                                className=" inline-flex items-center justify-center h-12 px-6 font-medium   transition duration-200 rounded shadow-md bg-gradient-to-tr from-gray-900 via-purple-900 to-violet-600  focus:shadow-outline focus:outline-none"
+                                className=" inline-flex items-center justify-center h-12 px-6 font-medium   transition duration-200 rounded shadow-md bg-success focus:shadow-outline focus:outline-none"
                                 title="Log Out"
                               >
                                 Log Out
@@ -249,7 +249,7 @@ const Header = () => {
                           ) : (
                             <Link to={"/login"}>
                               <button
-                                className="sign-login inline-flex items-center justify-center h-12 px-6 font-medium  transition duration-200 rounded shadow-md bg-gradient-to-tr from-gray-900 via-purple-900 to-violet-600 focus:shadow-outline focus:outline-none"
+                                className="sign-login inline-flex items-center justify-center h-12 px-6 font-medium  transition duration-200 rounded shadow-md bg-success  focus:shadow-outline focus:outline-none"
                                 title="Login"
                               >
                                 Login

@@ -1,10 +1,11 @@
 import React from "react";
+import './blog.css'
 
 const Blog = () => {
   return (
-    <div>
-      <div>
-        <h2>
+    <div className="blog">
+      <div className="border shadow card  glass px-4 py-5 mx-auto  md:px-24 lg:px-10">
+        <h2 className="font-bold text-2xl">
           What is an access token and refresh token? How do they work and where
           should we store them on the client-side?
         </h2>
@@ -34,9 +35,9 @@ const Blog = () => {
           a longer lifespan and can be used to obtain new access tokens. As
           such, they must be stored securely to prevent unauthorized access.
         </p>
-      </div>
-      <div>
-        <h2 className="font-bold">Compare SQL and NoSQL databases?</h2>
+      </div >
+      <div className="border shadow card  glass px-4 py-5 mx-auto  md:px-24 lg:px-10">
+        <h2 className="font-bold text-2xl">Compare SQL and NoSQL databases?</h2>
         <p>
           SQL databases are commonly referred to as relational database
           management systems (RDBMS). Traditional RDBMS uses SQL syntax as these
@@ -53,8 +54,8 @@ const Blog = () => {
           Infinite Graph, Neo4j, FlockDB, Cassandra, HBase, etc.
         </p>
       </div>
-      <div>
-        <h2>What is express js? What is Nest JS? </h2>
+      <div className="border shadow card  glass px-4 py-5 mx-auto  md:px-24 lg:px-10">
+        <h2 className="font-bold text-2xl">What is express js? What is Nest JS? </h2>
         <p>
           Express js:Express is one such framework that accomplishes this. It is
           a back end framework for Node JS. Current, it is being referred to as
@@ -66,8 +67,8 @@ const Blog = () => {
           repos in certain ways.
         </p>
       </div>
-      <div>
-        <h2>What is MongoDB aggregate and how does it work ?</h2>
+      <div className="border shadow card  glass px-4 py-5 mx-auto  md:px-24 lg:px-10">
+        <h2 className="font-bold text-2xl">What is MongoDB aggregate and how does it work ?</h2>
         <p>
           Database Management Systems have some common operations that are
           supported by SQL and NoSQL databases as well. The aggregation

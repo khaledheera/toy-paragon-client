@@ -94,17 +94,11 @@ const LogIn = () => {
 	return (
 		<div className="mb-5 login-comp p-10 md:p-20 ">
 			
-			<div className="w-full max-w-md p-6 m-auto mx-auto   rounded-md text-yellow-100 shadow-md bg-gradient-to-tr from-slate-900 via-rose-900 to-slate-900">
+			<div className="w-full max-w-md p-6 m-auto mx-auto   rounded-md text-yellow-100 shadow-md  bg-[#8D71E8]">
 
 				{errors && <p className="text-center text-xl my-3 text-red-600">{errors}</p>}
 				<h2 className="mb-3 text-3xl font-semibold text-center text-white">Login to your account</h2>
-				<p className="text-sm text-center dark:text-gray-400 mb-5 text-white ">
-					Don't have account?
-					<Link to={'/register'} className="focus:underline hover:underline ml-2 text-white">
-						Sign up here
-					</Link>
-				</p>
-
+				
 				<form onSubmit={handleSubmit} className="space-y-8 ">
 					<div className="space-y-4">
 						<div className="space-y-2">
@@ -163,8 +157,16 @@ const LogIn = () => {
 						<FaGoogle className="w-5 h-5 " />
 						<p>SignIn with Google</p>
 					</button>
+
 					
 				</div>
+				<p className="text-sm text-center dark:text-gray-400 mb-5 text-white ">
+					Don't have account?
+					<Link to={'/register'} className="focus:underline hover:underline ml-2 text-white">
+						Sign up here
+					</Link>
+				</p>
+
 			</div>
 		</div>
 	);

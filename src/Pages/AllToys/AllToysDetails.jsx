@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, } from 'react-router-dom';
 
 const AllToysDetails = ({toy}) => {
-    const {_id,sellerName,name,subCategory,price,quantity}=toy;
+    const {_id,sellerName,name,subCategory,price,quantity,index}=toy;
     return (
         
              
@@ -10,7 +10,7 @@ const AllToysDetails = ({toy}) => {
            <tr>
            
           
-              
+           <td>{index+1}</td>
            <td>{sellerName}</td>
            <td>{name}</td>
            <td>{subCategory}</td>
