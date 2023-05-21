@@ -12,9 +12,9 @@ const Header = () => {
   
 
   return (
-    <nav className="bg-[#059473]  mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl text-black">
-      <div className="mb-[210px] lg:mb-0 ">
-        <div className="px-4 py-5 mx-auto  md:px-24 lg:px-10">
+    <nav className="bg-[#00685E]   mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl text-black">
+      <div className="mb-[210px] lg:mb-0  glass rounded shadow-lg ">
+        <div className="px-4 py-5 mx-auto  ">
           <div className="relative flex items-center justify-between">
             <Link to="/" className="inline-flex items-center">
               <img src={logo} alt="" className="w-10 h-10 rounded-full" />

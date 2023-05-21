@@ -10,6 +10,7 @@ import MyToys from "../Pages/MyToys/MyToys";
 import PrivateRoutes from "./PrivateRoutes";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import Blog from "../Pages/Blog/Blog";
+import UpdateMyToys from "../Pages/MyToys/UpdateMyToys";
 
 
 
@@ -44,6 +45,11 @@ export const router = createBrowserRouter([
             {
                 path:'/allToys',
                 element:<AllToys/>,
+                
+            },
+            {
+                path:'/updateMyToys',
+                element:<UpdateMyToys/>,
                 
             },
             {

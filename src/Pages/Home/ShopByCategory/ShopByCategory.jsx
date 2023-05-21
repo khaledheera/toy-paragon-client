@@ -23,7 +23,7 @@ const ShopByCategory = () => {
 
 
     return (
-        <div className='bg-[#00685E] text-black'>
+        <div className='bg-[#00685E]  shadow-lg text-black '>
             <div className='font-sans text-3xl font-bold'>
                 <h1 className='text-center font-bold'>Bestsellers</h1>
                 <h2 className='text-center font-bold mt-6'>Top 3 Categories</h2>

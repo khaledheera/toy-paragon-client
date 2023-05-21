@@ -17,11 +17,19 @@ const MyToysDetails = ({myToy,deleteToy,updateMyToys,index}) => {
              <td>${price}</td>
              <td>{quantity}</td>
             
-            <td><UpdateMyToys
-             myToy={myToy}
+            <td>
+              <Link to={'/updateMyToys'} state={myToy}>
+              
+              <button>Update</button>
+              </Link>
+              {/* <UpdateMyToys
+            
+             
+
             UpdateMyToys={updateMyToys}
            
-            ></UpdateMyToys></td>
+            ></UpdateMyToys> */}
+            </td>
             
             
            <td> <Link onClick={() => deleteToy(_id)}  className="btn btn-info">Delete </Link></td>

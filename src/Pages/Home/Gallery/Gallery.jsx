@@ -5,13 +5,14 @@ import gallery3 from '../../../assets/images/Gallery3.jpg'
 import gallery4 from '../../../assets/images/Gallery4.jpg'
 import gallery5 from '../../../assets/images/Gallery5.jpg'
 import gallery6 from '../../../assets/images/Gallery6.jpg'
+import { Link } from 'react-router-dom';
 
 const Gallery = () => {
     return (
         <div>
             <h2></h2>
 
-            <div className="bg-[#00685E]   mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl text-black">
+            <div className="bg-[#00685E]  glass  shadow-lg   mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl text-black">
       <div className="flex flex-col w-full mb-6 lg:justify-center lg:flex-row md:mb-8">
         
           <h2 className="font-sans text-3xl font-bold text-gray-900 sm:text-4xl text-center flex justify-center">
@@ -91,8 +92,8 @@ const Gallery = () => {
         </div>
       </div>
       <div className="text-center">
-        <a
-          href="/"
+        <Link
+          to='/hjhjdjkf'
           aria-label=""
           className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
         >
@@ -104,7 +105,7 @@ const Gallery = () => {
           >
             <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z" />
           </svg>
-        </a>
+        </Link>
       </div>
     </div>
         </div>

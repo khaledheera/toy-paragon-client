@@ -5,7 +5,7 @@ const DollDetails = () => {
     const details=useLoaderData()
     const {picture,name,price,Rating,description,quantity,sellerEmail,sellerName}=details
    return (
-    <div className="hero min-h-screen bg-base-200">
+    <div className="hero min-h-screen bg-[#00685E]  glass shadow-2xl mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl">
     <div className="hero-content flex-col lg:flex-row">
       <img src={picture} className="max-w-sm rounded-lg shadow-2xl" />
       <div>
