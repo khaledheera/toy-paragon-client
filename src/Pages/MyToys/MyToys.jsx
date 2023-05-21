@@ -71,7 +71,7 @@ const MyToys = () => {
         <title> Toy Paragon | My Toys</title>
       </Helmet>
 
-      <label className="flex flex-col items-center mt-10">
+      <label className="flex flex-col items-end font-bold mt-10">
         <span className="text-lg mb-2">Sort By Price</span>
         <select onChange={sortingPrice} className="border p-3" name="sort">
           <option value={1}>High To Low</option>
@@ -80,7 +80,7 @@ const MyToys = () => {
       </label>
 
 
-      <table className="table w-full">
+      <table className="table w-full border-8 rounded-lg shadow-lg ">
         <tbody>
           <tr>
             <th>No.</th>
@@ -90,7 +90,7 @@ const MyToys = () => {
             <th>Price</th>
             <th>Available Quantity</th>
             <th>Action</th>
-            <th>Action</th>
+            {/* <th>Action</th> */}
           </tr>
         </tbody>
         <tbody>

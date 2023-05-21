@@ -36,7 +36,7 @@ const AllToys = () => {
           />{" "}
           <button className='font-bold' onClick={searchToy }>Search</button>
         </div>
-             <table className="table w-full">
+             <table className="table w-full border-8 p-4 rounded-lg shadow-lg ">
                    
                     <tbody>
                         <tr>

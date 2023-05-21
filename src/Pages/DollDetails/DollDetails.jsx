@@ -21,7 +21,7 @@ const DollDetails = () => {
         <p><span className='font-bold'>Quantity: </span>{quantity} </p>
         <p><span className='font-bold'>Seller Name: </span>{sellerName} </p>
         <p><span className='font-bold '>Seller Email: </span>{sellerEmail} </p>
-        <Link  className="btn btn-primary mt-2">Buy Now</Link>
+        <Link  className="btn  mt-2">Buy Now</Link>
       </div>
     </div>
   </div>

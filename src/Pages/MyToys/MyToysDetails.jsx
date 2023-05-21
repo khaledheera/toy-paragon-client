@@ -17,22 +17,17 @@ const MyToysDetails = ({myToy,deleteToy,updateMyToys,index}) => {
              <td>${price}</td>
              <td>{quantity}</td>
             
-            <td>
-              <Link to={'/updateMyToys'} state={myToy}>
+            <td >
+             <div className='flex justify-items-start gap-2'>
+             <Link to={'/updateMyToys'} state={myToy}>
               
               <button className='btn btn-info'>Update</button>
               </Link>
-              {/* <UpdateMyToys
-            
              
-
-            UpdateMyToys={updateMyToys}
-           
-            ></UpdateMyToys> */}
+            <Link onClick={() => deleteToy(_id)}  className=" btn btn-error">Delete </Link>
+            
+             </div>
             </td>
-            
-            
-           <td> <Link onClick={() => deleteToy(_id)}  className="btn btn-info">Delete </Link></td>
           
             
              
