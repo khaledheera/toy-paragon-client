@@ -36,7 +36,7 @@ export const router = createBrowserRouter([
             {
                 path:"/dollDetails/:id",
                 element:<PrivateRoutes><DollDetails/></PrivateRoutes>,
-                loader:({params})=>fetch(`http://localhost:5000/category/${params.id}`)
+                loader:({params})=>fetch(`https://toy-paragon-server.vercel.app/category/${params.id}`)
             },
             {
                 path:"/addToys",

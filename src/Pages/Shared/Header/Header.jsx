@@ -102,7 +102,7 @@ const Header = () => {
               </li>
 
               <li>
-                <Link to={"user-profile"}>
+                <Link >
                   {user?.photoURL ? (
                     <div
                       className="tooltip tooltip-bottom tooltip-info"
@@ -215,7 +215,7 @@ const Header = () => {
                           </NavLink>
                         </li>
                         <li>
-                          <Link to={"user-profile"}>
+                          <Link >
                             {user?.photoURL ? (
                               <div
                                 className="tooltip tooltip-bottom tooltip-info"

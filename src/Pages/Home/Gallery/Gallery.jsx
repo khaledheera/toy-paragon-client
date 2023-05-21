@@ -9,10 +9,9 @@ import { Link } from 'react-router-dom';
 
 const Gallery = () => {
     return (
-        <div>
-            <h2></h2>
-
-            <div className="bg-[#00685E]  glass  shadow-lg   mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl text-black">
+        <div className='bg-[#00685E]'>
+          
+            <div className="  glass  shadow-lg   mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl text-black">
       <div className="flex flex-col w-full mb-6 lg:justify-center lg:flex-row md:mb-8">
         
           <h2 className="font-sans text-3xl font-bold text-gray-900 sm:text-4xl text-center flex justify-center">
@@ -93,7 +92,7 @@ const Gallery = () => {
       </div>
       <div className="text-center">
         <Link
-          to='/hjhjdjkf'
+          
           aria-label=""
           className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
         >

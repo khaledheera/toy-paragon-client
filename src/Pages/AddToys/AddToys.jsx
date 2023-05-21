@@ -1,13 +1,17 @@
 import React, { useContext, useState } from 'react';
 import { useForm } from "react-hook-form";
 import { AuthContext } from '../../Providers/AuthProvider';
+import { Helmet } from 'react-helmet-async';
+import { toast } from 'react-hot-toast';
+import { useNavigate } from 'react-router-dom';
 
 const AddToys = () => {
     const { user } = useContext(AuthContext);
+    const navigate = useNavigate()
    
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
     const onSubmit = data => {
-      fetch('http://localhost:5000/addToys',{
+      fetch('https://toy-paragon-server.vercel.app/addToys',{
         method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),
@@ -15,6 +19,8 @@ const AddToys = () => {
       .then((res) => res.json())
       .then((result) => {
         console.log(result);
+        toast.success(`${name} Added successfully`)
+        navigate('/allToys')
       });
     };
     
@@ -23,6 +29,9 @@ const AddToys = () => {
 
     return (
        <div className='px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 text-center border bg-orange-200'>
+        <Helmet>
+			<title> Toy Paragon | Add Toys </title>
+			</Helmet>
          
             <form onSubmit={handleSubmit(onSubmit)}>
             {errors.exampleRequired && <span>This field is required</span>}

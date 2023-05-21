@@ -14,7 +14,7 @@ const AllToysDetails = ({toy,index}) => {
            <td>{sellerName}</td>
            <td>{name}</td>
            <td>{subCategory}</td>
-           <td>${price}</td>
+           <td>{price}</td>
            <td>{quantity}</td>
           <div>
           <Link to={`/dollDetails/${_id}`} className="btn btn-info">View Details  </Link>

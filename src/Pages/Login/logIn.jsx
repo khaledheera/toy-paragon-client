@@ -6,6 +6,8 @@ import"./Login.css"
 
 import { AiFillEye, AiFillEyeInvisible } from 'react-icons/ai';
 import { AuthContext } from '../../Providers/AuthProvider';
+import { Helmet } from 'react-helmet-async';
+
 
 const LogIn = () => {
 	const { signIn, googleSignIn, forgotPassword, setLoading } =
@@ -93,11 +95,14 @@ const LogIn = () => {
 
 	return (
 		<div className="mb-5 login-comp p-10 md:p-20 ">
+			<Helmet>
+			<title> Toy Paragon | Log in </title>
+			</Helmet>
 			
-			<div className="w-full max-w-md p-6 m-auto mx-auto   rounded-md text-yellow-100 shadow-md  bg-[#8D71E8]">
+			<div className="w-full max-w-md p-6 m-auto mx-auto   rounded-md text-black shadow-md  bg-[#8D71E8]">
 
 				{errors && <p className="text-center text-xl my-3 text-red-600">{errors}</p>}
-				<h2 className="mb-3 text-3xl font-semibold text-center text-white">Login to your account</h2>
+				<h2 className="mb-3 text-3xl font-semibold text-center text-black">Login to your account</h2>
 				
 				<form onSubmit={handleSubmit} className="space-y-8 ">
 					<div className="space-y-4">
@@ -128,7 +133,7 @@ const LogIn = () => {
 								className="w-full px-3 py-2 border rounded-md dark:border-gray-700 dark:bg-gray-900 dark:text-gray-100 focus:dark:border-violet-400"
 							/>
 							<span
-								className="absolute right-5 cursor-pointer top-8 text-xl text-white"
+								className="absolute right-5 cursor-pointer top-8 text-xl text-black"
 								onClick={togglePassword}>
 								{showPass ? <AiFillEye /> : <AiFillEyeInvisible />}
 							</span>
@@ -160,9 +165,9 @@ const LogIn = () => {
 
 					
 				</div>
-				<p className="text-sm text-center dark:text-gray-400 mb-5 text-white ">
+				<p className="text-sm text-center dark:text-gray-400 mb-5 text-black ">
 					Don't have account?
-					<Link to={'/register'} className="focus:underline hover:underline ml-2 text-white">
+					<Link to={'/register'} className="focus:underline hover:underline ml-2 text-black">
 						Sign up here
 					</Link>
 				</p>

@@ -5,6 +5,7 @@ import {  FaGoogle } from 'react-icons/fa';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import './register.css';
 import { AuthContext } from '../../Providers/AuthProvider';
+import { Helmet } from 'react-helmet-async';
  
 
 const Register = () => {
@@ -25,8 +26,6 @@ const Register = () => {
 		const noSymbol = !/[\!\@\#\$\%\^\&\*]{1,}/.test(password);
 		if (password.length < 6) {
 			setErrors({ ...errors, password: 'Must be at least 6 characters' });
-		} else if (noSymbol) {
-			setErrors({ ...errors, password: 'You must use atleast one special character' });
 		} else {
 			setErrors({ ...errors, password: '' });
 		}
@@ -103,11 +102,14 @@ const Register = () => {
 
 	return (
 		<div className="register-comp p-10 md:p-20 ">
-			<div className="w-full max-w-md mx-auto p-8 space-y-3 rounded-xl bg-[#8D71E8] text-yellow-100 ">
+			<Helmet>
+			<title> Toy Paragon | Register </title>
+			</Helmet>
+			<div className="w-full max-w-md mx-auto p-8 space-y-3 rounded-xl bg-[#8D71E8] text-black ">
 				<h1 className="text-2xl font-bold text-center">Register !!!</h1>
 				<form onSubmit={handleSubmit} className="space-y-6 ng- ">
 					<div className="space-y-1 text-sm">
-						<label htmlFor="name" className="block dark:text-gray-400 text-left mb-1">
+						<label htmlFor="name" className="block dark:text-black text-left mb-1">
 							Full Name
 						</label>
 						<input
@@ -118,18 +120,18 @@ const Register = () => {
 						/>
 					</div>
 					<div className="space-y-1 text-sm">
-						<label htmlFor="photoURL" className="block dark:text-gray-400 text-left mb-1">
+						<label htmlFor="photoURL" className="block dark:text-black text-left mb-1">
 							PhotoURL
 						</label>
 						<input
 							type="text"
 							name="photoURL"
 							placeholder="PhotoURL"
-							className="w-full px-4 py-3 rounded-md dark:border-gray-700 dark:bg-gray-900 dark:text-gray-100 focus:dark:border-violet-400"
+							className="w-full px-4 py-3 rounded-md dark:border-gray-700 dark:bg-gray-900 dark:text-black focus:dark:border-violet-400"
 						/>
 					</div>
 					<div className="space-y-1 text-sm">
-						<label htmlFor="email" className="block dark:text-gray-400 text-left mb-1">
+						<label htmlFor="email" className="block dark:text-black text-left mb-1">
 							Email
 						</label>
 						<input

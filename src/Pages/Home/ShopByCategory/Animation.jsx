@@ -11,7 +11,7 @@ const Animation = ({animationCharacter}) => {
           <h2 className="card-title justify-center">{name}</h2>
           
           <div className='flex justify-center items-center gap-2 mt-6'>
-          <p><span className='font-bold'>Price: $</span>{price}</p>
+          <p><span className='font-bold'>Price: </span>{price}</p>
           <p><span className='font-bold'>Rating: </span>{Rating} Star</p>
             
           </div>

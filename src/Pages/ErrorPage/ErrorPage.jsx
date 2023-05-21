@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import { Link, useRouteError } from 'react-router-dom';
 
 const ErrorPage = () => {
@@ -7,6 +8,9 @@ const ErrorPage = () => {
 
 	return (
 		<div className="error-page bg-gradient-to-r from-slate-900 via-[#00685E] to-slate-900">
+			<Helmet>
+			<title> Toy Paragon | Error Page </title>
+			</Helmet>
 			<div className="grid h-screen place-content-center ">
 				<div className="container flex flex-col items-center justify-center px-5 mx-auto my-8 space-y-8 text-center sm:max-w-md">
 					<svg

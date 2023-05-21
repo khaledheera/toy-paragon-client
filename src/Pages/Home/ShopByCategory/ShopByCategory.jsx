@@ -12,7 +12,7 @@ const ShopByCategory = () => {
     const [category, SetCategory] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/category')
+        fetch('https://toy-paragon-server.vercel.app/category')
             .then(res => res.json())
             .then(data => SetCategory(data));
     }, [])
@@ -36,7 +36,7 @@ const ShopByCategory = () => {
       <Tab>Disney princes</Tab>
     </TabList>
 
-  <div>
+  <div >
   
    <TabPanel >
    <div className='flex justify-around'>

@@ -4,8 +4,9 @@ import logo from "../../../assets/images/logo.png";
 
 const Footer = () => {
     return (
-        <div>
-                <div className=" bg-[#00685E]  glass shadow-lg  text-black px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+       <div className='bg-[#00685E] mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl'>
+         <div className=' glass shadow-lg text-black px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 '>
+    <div className="   ">
       <div className="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
         <div className="sm:col-span-2">
           <a
@@ -128,6 +129,7 @@ const Footer = () => {
       </div>
     </div>
         </div>
+       </div>
     );
 };
 

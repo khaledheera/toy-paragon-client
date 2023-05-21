@@ -5,8 +5,10 @@ import { Link } from 'react-router-dom';
 
 const Banner = () => {
     return (
-		<div className="bg-[#00685E]  glass  shadow-lg px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 text-black">
-		<div className="flex flex-col items-center justify-between w-full mb-10 lg:flex-row">
+		<div className="bg-[#00685E]  ">
+
+			<div className='px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 text-black glass  '>
+			<div className="flex flex-col items-center justify-between w-full mb-10 lg:flex-row">
 		  <div className="mb-16 lg:mb-0 lg:max-w-lg lg:pr-5">
 			<div className="max-w-xl mb-6">
 			  <div>
@@ -41,7 +43,7 @@ We deliver best of fantastic,hand-piched,age appropriate toys.It Help to Brain G
 		  </div>
 		</div>
 		<Link
-		 to="/jdfdjgjk"
+		
 		  aria-label="Scroll down"
 		  className="flex items-center justify-center w-10 h-10 mx-auto text-gray-600 hover:text-deep-purple-accent-400 hover:border-deep-purple-accent-400 duration-300 transform border border-gray-400 rounded-full hover:shadow hover:scale-110"
 		>
@@ -49,6 +51,8 @@ We deliver best of fantastic,hand-piched,age appropriate toys.It Help to Brain G
 			<path d="M10.293,3.293,6,7.586,1.707,3.293A1,1,0,0,0,.293,4.707l5,5a1,1,0,0,0,1.414,0l5-5a1,1,0,1,0-1.414-1.414Z" />
 		  </svg>
 		</Link>
+			</div>
+	
 	  </div>
 
 

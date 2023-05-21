@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import AllToysDetails from './AllToysDetails';
+import { Helmet } from 'react-helmet-async';
 
 
 const AllToys = () => {
     const [toys, setToys] = useState([]);
     const [searchToys, setSearchToys] = useState("");
     useEffect(()=>{
-        fetch('http://localhost:5000/allToys')
+        fetch('https://toy-paragon-server.vercel.app/allToys')
         .then((res) => res.json())
       .then((data) => {
         setToys(data);
@@ -15,7 +16,7 @@ const AllToys = () => {
 
 
     const searchToy = () => {
-        fetch(`http://localhost:5000/getToysByText/${searchToys}`)
+        fetch(`https://toy-paragon-server.vercel.app/getToysByText/${searchToys}`)
           .then((res) => res.json())
           .then((data) => {
             setToys(data);
@@ -24,6 +25,9 @@ const AllToys = () => {
 
     return (
         <div className='px-4   mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 '>
+          <Helmet>
+			<title> Toy Paragon | All Toys </title>
+			</Helmet>
              <div className="search-box p-2 text-center ">
           <input
             onChange={(e) => setSearchToys(e.target.value)}

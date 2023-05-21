@@ -20,7 +20,7 @@ const MyToysDetails = ({myToy,deleteToy,updateMyToys,index}) => {
             <td>
               <Link to={'/updateMyToys'} state={myToy}>
               
-              <button>Update</button>
+              <button className='btn btn-info'>Update</button>
               </Link>
               {/* <UpdateMyToys
             
